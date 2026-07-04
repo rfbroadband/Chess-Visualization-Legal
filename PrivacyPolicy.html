@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Chess Vizualization</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --page-bg: #fff;
+    --page-fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --link: #0066cc;
+    --summary-bg: #f4f8ff;
+    --summary-border: #cfd9ee;
+    --code-bg: #f3f3f3;
+    --hr: #ccc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page-bg: #111;
+      --page-fg: #e8e8e8;
+      --muted: #9a9a9a;
+      --link: #6ea8ff;
+      --summary-bg: #1a1f2b;
+      --summary-border: #2a3a5a;
+      --code-bg: #222;
+      --hr: #333;
+    }
+  }
+  body {
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 680px;
+    margin: 2rem auto;
+    padding: 0 1.25rem 4rem;
+    color: var(--page-fg);
+    background: var(--page-bg);
+  }
+  a { color: var(--link); }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  .summary {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .summary ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+  .summary li { margin: 0.25rem 0; }
+  code {
+    font: 0.9em/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--code-bg);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+  hr { border: none; border-top: 1px solid var(--hr); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Chess Vizualization</h1>
+<p class="meta">Effective date: <strong>July 15, 2026</strong></p>
+
+<p>Chess Vizualization (&ldquo;the app&rdquo;) is developed by <strong>Oliver Werther</strong> (&ldquo;we,&rdquo; &ldquo;us&rdquo;). This policy explains what happens with your data when you use the app. In plain terms: we don't collect anything on our servers, because we don't have any.</p>
+
+<div class="summary">
+  <strong>Summary</strong>
+  <ul>
+    <li>We collect <strong>no personal data</strong> on our own servers. We don't operate any.</li>
+    <li>Your practice progress, statistics, and profile sync across <em>your</em> Apple devices via <strong>Apple iCloud</strong>. We can't see it.</li>
+    <li>When you enter a Chess.com, Lichess, FIDE, or US Chess username or ID, the app queries those public APIs directly from your device to fetch your rating. We are not in the middle.</li>
+    <li>Subscription payments are processed entirely by <strong>Apple</strong>. We never see your payment method.</li>
+    <li>We use <strong>no</strong> analytics, crash reporting, advertising, or third-party tracking SDKs.</li>
+    <li>The app does <strong>not</strong> access your camera, microphone, location, contacts, photos, or health data.</li>
+  </ul>
+</div>
+
+<h2>1. Data stored on your device</h2>
+<p>Puzzle progress, settings, and preferences are stored locally on your device. This information does not leave your device except to sync via iCloud (see next section) or to fetch a rating you asked for (Section 3).</p>
+
+<h2>2. iCloud sync (CloudKit)</h2>
+<p>If you are signed into iCloud, the app uses Apple's CloudKit service to sync the following across your Apple devices:</p>
+<ul>
+  <li>Player profile you entered (name, country, chess federation IDs, online usernames)</li>
+  <li>Practice statistics, favorites, mistakes list, training streaks</li>
+  <li>Rating history you have saved</li>
+</ul>
+<p>This data is stored in <strong>your</strong> iCloud account, not on our servers. Apple's <a href="https://www.apple.com/legal/privacy/">iCloud privacy terms</a> apply. You can disable syncing by turning off iCloud for the app in <em>iOS Settings → your Apple ID → iCloud → Apps Using iCloud</em>.</p>
+
+<h2>3. Third-party rating lookups</h2>
+<p>If you enter a public username or ID from any of the following services, the app makes a direct HTTPS request from your device to that service to display your rating:</p>
+<ul>
+  <li>Chess.com — <code>api.chess.com/pub/player/…</code></li>
+  <li>Lichess — <code>lichess.org/api/user/…</code></li>
+  <li>FIDE — <code>ratings.fide.com/profile/…</code></li>
+  <li>US Chess — <code>ratings-api.uschess.org/…</code></li>
+</ul>
+<p>These requests go from your device to those public APIs. We do not receive, log, or store the request or the response. Each service has its own privacy policy governing that lookup.</p>
+
+<h2>4. Push notifications</h2>
+<p>The app is registered to receive silent CloudKit notifications used to trigger background iCloud syncing. These do not display any user-facing message. We do not send marketing or promotional push notifications.</p>
+
+<h2>5. Subscriptions and payments</h2>
+<p>If you subscribe to Chess Vizualization Pro, the transaction is processed entirely by <strong>Apple</strong> through the App Store. We never receive your name, address, or payment method. We receive from Apple only whether an active subscription exists for the current device &mdash; that is what unlocks unlimited puzzle access.</p>
+<p>Subscription price, duration, and auto-renewal terms are shown before purchase in the App Store's standard confirmation sheet. To manage or cancel, use <em>iOS Settings → your Apple ID → Subscriptions</em>.</p>
+
+<h2>6. Players of all ages</h2>
+<p>Chess is played across every age group, and Chess Vizualization is designed to be used by players of any age, including young children learning the game with a coach or parent. Because the app does not collect personal data on any server we operate, and because all optional profile information (name, federation IDs, online usernames) stays in the user's own iCloud account or on their device, no personal information from a young player is ever transmitted to us. Parents and guardians of children under 13 who use a shared or child-owned Apple ID can manage what the app can access through iOS <strong>Screen Time</strong> and Apple <strong>Family Sharing</strong> controls.</p>
+
+<h2>7. Your rights</h2>
+<p>Because we do not hold your data on any server, there is nothing for us to export or delete on your behalf. To remove all data the app has stored:</p>
+<ul>
+  <li>Delete the app to remove local data on that device.</li>
+  <li>Turn off iCloud for Chess Vizualization in iOS Settings to remove synced data from your iCloud account.</li>
+</ul>
+
+<h2>8. Changes to this policy</h2>
+<p>If we materially change this policy, we will update the Effective date above and, when the change is significant, surface a notice inside the app on the next launch.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy? Email <a href="mailto:support@werther.us">support@werther.us</a>.</p>
+
+<hr>
+<p class="meta">Chess Vizualization is developed by Oliver Werther. All product names and trademarks referenced are property of their respective owners.</p>
+
+</body>
+</html>
