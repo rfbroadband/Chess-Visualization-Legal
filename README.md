@@ -1,2 +1,2 @@
 # Chess-Visualization-Legal
-Legal documents for Chess Vizuzliaztion iOS app
+Legal documents for Chess Visualization iOS app
